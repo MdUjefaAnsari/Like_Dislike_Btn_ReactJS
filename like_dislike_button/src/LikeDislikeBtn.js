@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import './App.css';
 export default class LikeDislikeBtn extends Component {
 
     constructor(props){
@@ -9,7 +9,7 @@ export default class LikeDislikeBtn extends Component {
         }
     }
     handleLike=()=>{
-        if(this.state.like<10){
+        if(this.state.like<20){
             this.setState({like:this.state.like+1});
         }
     }
@@ -21,7 +21,7 @@ export default class LikeDislikeBtn extends Component {
 
   render() {
     return (
-      <div style={{background:"red"}}>
+      <div className='container'>
         <button onClick={this.handleLike}>Like</button>
         <h1>{this.state.like}</h1>
         <button onClick={this.handleDislike}>Dislike</button>
