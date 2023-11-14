@@ -22,9 +22,10 @@ export default class LikeDislikeBtn extends Component {
   render() {
     return (
       <div className='container'>
-        <button onClick={this.handleLike}>Like</button>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous"></link>
+        <button onClick={this.handleLike}><i class="fas fa-thumbs-up "></i> Like</button>
         <h1>{this.state.like}</h1>
-        <button onClick={this.handleDislike}>Dislike</button>
+        <button onClick={this.handleDislike} ><i class="fas fa-thumbs-down "></i> Like</button>
       </div>
     )
   }
